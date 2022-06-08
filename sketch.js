@@ -1,10 +1,13 @@
 function setup() {
-  createCanvas(400,400);
+  createCanvas(windowWidth, windowHeight);
 
   circlegrid = new Circlegrid(int(random(2,5)));
   circlegrid.prepare();
 }
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+  }
 
 function draw() {
 
